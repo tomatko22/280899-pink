@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [280899051d2 Промокод на скидку](https://up.htmlacademy.ru/adaptive/11/user/280899).
-* Наставник: `Неизвестно`.
+* Студент: [Ангелина Дорашева](https://up.htmlacademy.ru/adaptive/11/user/280899).
+* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
 
 ---
 
