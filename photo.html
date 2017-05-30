@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+  <!--  ////////////////////////  ХЭДЕР //////////////////////////
+  ///////////////////////////////////////////////////////////////////-->
+
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a href="#">
+        <img class="page-header__logo-img" src="#" alt="Pink">
+      </a>
+    </div>
+
+          <!-- навигация -->
+
+    <nav class="main-nav main-nav--open">
+      <span class="main-nav__toggler"><span></span></span>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__title">
+      <h1>Фотографии пользователей</h1> 
+    </div>
+  </header>
+
+   
+<!--  ////////////////////////  MAIN //////////////////////////
+  ///////////////////////////////////////////////////////////////////-->
+
+  <main>
+
+    <span class="slogan">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</span>
+
+      <!-- Блок с фото -->
+
+    <section class="photocards">
+      <article class="card">
+        <figure class="card__card-figure card__card-figure--panorama">
+          <span class="card__card-sticker">Панорама дня</span>
+          <img class="card__card-anna" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Анна</span>
+            <span class="card__comment-time">(5 минут назад)</span>
+            <span class="card__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 215</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card__card-figure">
+          <img class="card__card-levon" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Левон</span>
+            <span class="card__comment-time">(5 часов назад)</span>
+            <span class="card__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 356</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card__card-figure">
+          <img class="card__card-anton" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Антон</span>
+            <span class="card__comment-time">(12 часов назад)</span>
+            <span class="card__comment-text">Соседи будут рады!</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 666</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card__card-figure">
+          <img class="card__card-boris" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Борис</span>
+            <span class="card__comment-time">(20 часов назад)</span>
+            <span class="card__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 215</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card__card-figure">
+          <img class="card__card-sergei" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Сергей</span>
+            <span class="card__comment-time">(25 часов назад)</span>
+            <span class="card__comment-text">Самая кубанская в мире!</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 4</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card__card-figure">
+          <img class="card__card-maxim" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Максим</span>
+            <span class="card__comment-time">(40 часов назад)</span>
+            <span class="card__comment-text">Где снег-то?</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 150</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card__card-figure">
+          <img class="card__card-nadejda" src="#" alt="photo">
+        </figure>
+        <div class="card__card-content">
+          <div class="card__card-comment">
+            <span class="card__comment-author">Надежда</span>
+            <span class="card__comment-time">(45 часов назад)</span>
+            <span class="card__comment-text">Всем GM и взаимные лайки!</span>
+          </div>
+        </div>
+        <div class="card__card-like">
+          <span class="card__likes-num">Нравится: 2560</span>
+        </div>
+      </article>
+    </section>
+
+    <span class="slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в<br> телефоне!</span>
+
+    <!-- Блок с редактором -->
+
+    <section class="redactor">
+      <div class="redactor__photo-upload">
+        <img src="#" alt="yours-photo">
+      </div>
+      <form action="#" method="post">
+        <span class="predactor__crop predactor__crop--active"></span>
+        <input type="range" name="level" step="1">
+
+        <span class="redactor__contrast"></span>
+        <input type="range" name="level" step="1">
+
+        <span class="redactor__fill"></span>
+        <input type="range" name="level" step="1">
+      </form>
+      <div class="line"></div>
+      <a class="redactor__photo-post btn" href="#">Запостить</a>
+      <a class="redactor__photo-cancel btn" href="#">Отмена</a>
+    </section>
+  </main>
+
+
+<!--  ////////////////////////  FOOTER //////////////////////////
+  ///////////////////////////////////////////////////////////////////-->
+
+
+  <footer class="page-footer">
+      <a class="page-footer__logo" href="#"><img src="#" alt="logo"></a>
+      <span class="social-links">
+        <a class="social-link social-links--tweet" href="#">tweet</a>
+        <a class="social-link social-links--fb" href="#">facebook</a>
+        <a class="social-link social-links--youtube" href="#">youtube</a>
+      </span>
+      <span class="page-footer__copyright">
+         Разработано
+        <a class="page-footer__copyright-icon"><img src="#" alt="htmlacademy"></a>
+      </span>
+  </footer>
+  </body>
+</html>
