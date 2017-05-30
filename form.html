@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+  <!--  ////////////////////////  ХЭДЕР //////////////////////////
+  ///////////////////////////////////////////////////////////////////-->
+
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a href="#">
+        <img class="page-header__logo-img" src="#" alt="Pink">
+      </a>
+    </div>
+
+          <!-- навигация -->
+
+    <nav class="main-nav main-nav--open">
+      <span class="main-nav__toggler"><span></span></span>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__title">
+      <h1>Конкурс на самое<br> безбашенное<br> путешествие с Пинк</h1> 
+    </div>
+  </header>
+
+   
+<!--  ////////////////////////  MAIN //////////////////////////
+  ///////////////////////////////////////////////////////////////////-->
+
+  <main>
+
+    <span class="slogan">Поделитесь своей историей и получите<br> шанс выиграть ценный приз - 1000<br> миль на вашу бонусную карту!</span>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+    <div class="form__item-name">
+      <label for="lastname">Фамилия:</label><br>
+      <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *"><br>
+
+      <label for="firstname">Имя:</label><br>
+      <input type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *"><br>
+
+      <label for="patronymic">Отчество:</label><br>
+      <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже *"><br>
+    </div>
+
+      <!-- ЧЕКБОКСЫ -->
+
+
+    <div class="form__item-achievs">
+      <span class="form__title-checkbox">
+        Ваши безбашенные достижения в путешествии
+      </span><br>
+
+      <input type="checkbox" name="selfie" id="selfie" checked>
+      <label for="selfie">Сделал селфи с акулой</label><br>
+
+      <input type="checkbox" name="beach" id="beach" checked>
+      <label for="beach">Обгорел на пляже</label><br>
+
+      <input type="checkbox" name="norris" id="norris" >
+      <label for="norris">Видел Чака Норриса</label><br>
+
+      <input type="checkbox" name="gift" id="gift">
+      <label for="gift">Накупил сувениров</label><br>
+
+      <input type="checkbox" name="tower" id="tower" checked>
+      <label for="tower">Удержал башню</label><br>
+
+      <input type="checkbox" name="hotel" id="hotel">
+      <label for="shotel">Разгромил отель</label><br>
+
+      <!-- КОНТАКТЫ -->
+
+    <div class="form__item-contacts">
+
+      <label for="phone-num">Номер телефона</label><br>
+      <input type="text" name="phone-num" id="phone-num" placeholder="Номер, пожалуйста"><br>  
+
+      <label for="email">Адрес почты</label><br>
+      <input type="text" name="email" id="email" placeholder="Введите почту *"><br>  
+    </div>
+
+
+      <!-- РАДИОБАТТОНЫ -->  
+    <div class="form__item-app">
+      <span class="form__title-radiobtn">
+        С каким приложением<br> путешествовали?
+      </span><br>
+
+
+      <input type="radio" name="app" value="ios" id="ios">
+      <label for="ios">Pink на iOS</label><br>
+
+      <input type="radio" name="app" value="android" id="android">
+      <label for="android">Pink на Android</label><br>
+      
+      <input type="radio" name="app" value="Windows" id="Windows">
+      <label for="Windows">Windows Phone</label><br>
+    </div>
+
+      <!-- МНОГОСТРОЧНОЕ ПОЛЕ  -->
+
+    <div class="form__comment">
+      <span class="form__title">
+        Опишите свои эмоции
+      </span><br>
+
+      <textarea name="comment" id="comment-field" rows="6" cols="25">Можно прям в красках, не стесняясь в выражениях</textarea>
+
+      <input type="submit" value="Отправить форму">
+
+      <span class="form__info">
+        <span class="form__info-star">*</span>
+        - обязательные поля
+      </span>
+    </div>
+    </form>
+  </main>
+
+
+<!--  ////////////////////////  FOOTER //////////////////////////
+  ///////////////////////////////////////////////////////////////////-->
+
+
+  <footer class="page-footer">
+      <a class="page-footer__logo" href="#"><img src="#" alt="logo"></a>
+      <span class="social-links">
+        <a class="social-link social-links--tweet" href="#">tweet</a>
+        <a class="social-link social-links--fb" href="#">facebook</a>
+        <a class="social-link social-links--youtube" href="#">youtube</a>
+      </span>
+      <span class="page-footer__copyright">
+         Разработано
+        <a class="page-footer__copyright-icon"><img src="#" alt="htmlacademy"></a>
+      </span>
+  </footer>
+  </body>
+</html>
