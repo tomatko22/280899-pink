@@ -5,190 +5,155 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-  <!--  ////////////////////////  ХЭДЕР //////////////////////////
-  ///////////////////////////////////////////////////////////////////-->
-
-  <header class="page-header">
-    <div class="page-header__logo">
+    <header class="page-header">
       <a href="#">
         <img class="page-header__logo-img" src="#" alt="Pink">
       </a>
-    </div>
-
-          <!-- навигация -->
-
-    <nav class="main-nav main-nav--open">
-      <span class="main-nav__toggler"><span></span></span>
-      <div class="main-nav__wrapper">
+      <nav class="main-nav main-nav--open">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item main-nav__item--active"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="foto.html">Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
-      </div>
-    </nav>
-    <div class="page-header__title">
-      <h1>Фотографии пользователей</h1> 
-    </div>
-  </header>
-
-   
-<!--  ////////////////////////  MAIN //////////////////////////
-  ///////////////////////////////////////////////////////////////////-->
-
-  <main>
-
-    <span class="slogan">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</span>
-
-      <!-- Блок с фото -->
-
-    <section class="photocards">
-      <article class="card">
-        <figure class="card__card-figure card__card-figure--panorama">
-          <span class="card__card-sticker">Панорама дня</span>
-          <img class="card__card-anna" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Анна</span>
-            <span class="card__comment-time">(5 минут назад)</span>
-            <span class="card__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
+      </nav>
+      <button class="main-nav btn" type="button">Открыть</button>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
+    </header>
+    <main>
+      <p class="slogan">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+      <section class="photocards">
+        <article class="card">
+          <figure class="card__card-figure card__card-figure--fullscreen">
+            <img class="card__card-anna" src="http://placehold.it/320x135" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Анна</span>
+              <span class="card__comment-time">(5 минут назад)</span>
+              <p class="card__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </div>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 215</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <figure class="card__card-figure">
-          <img class="card__card-levon" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Левон</span>
-            <span class="card__comment-time">(5 часов назад)</span>
-            <span class="card__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">215</span>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 356</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <figure class="card__card-figure">
-          <img class="card__card-anton" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Антон</span>
-            <span class="card__comment-time">(12 часов назад)</span>
-            <span class="card__comment-text">Соседи будут рады!</span>
+        </article>
+        <article class="card">
+          <figure class="card__card-figure">
+            <img class="card__card-levon" src="http://placehold.it/280x180" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Левон</span>
+              <span class="card__comment-time">(5 часов назад)</span>
+              <p class="card__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </div>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 666</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <figure class="card__card-figure">
-          <img class="card__card-boris" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Борис</span>
-            <span class="card__comment-time">(20 часов назад)</span>
-            <span class="card__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</span>
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">356</span>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 215</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <figure class="card__card-figure">
-          <img class="card__card-sergei" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Сергей</span>
-            <span class="card__comment-time">(25 часов назад)</span>
-            <span class="card__comment-text">Самая кубанская в мире!</span>
+        </article>
+        <article class="card">
+          <figure class="card__card-figure">
+            <img class="card__card-anton" src="http://placehold.it/280x180" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Антон</span>
+              <span class="card__comment-time">(12 часов назад)</span>
+              <p class="card__comment-text">Соседи будут рады!</p>
+            </div>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 4</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <figure class="card__card-figure">
-          <img class="card__card-maxim" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Максим</span>
-            <span class="card__comment-time">(40 часов назад)</span>
-            <span class="card__comment-text">Где снег-то?</span>
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">666</span>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 150</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <figure class="card__card-figure">
-          <img class="card__card-nadejda" src="#" alt="photo">
-        </figure>
-        <div class="card__card-content">
-          <div class="card__card-comment">
-            <span class="card__comment-author">Надежда</span>
-            <span class="card__comment-time">(45 часов назад)</span>
-            <span class="card__comment-text">Всем GM и взаимные лайки!</span>
+        </article>
+        <article class="card">
+          <figure class="card__card-figure">
+            <img class="card__card-boris" src="http://placehold.it/280x180" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Борис</span>
+              <span class="card__comment-time">(20 часов назад)</span>
+              <p class="card__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
           </div>
-        </div>
-        <div class="card__card-like">
-          <span class="card__likes-num">Нравится: 2560</span>
-        </div>
-      </article>
-    </section>
-
-    <span class="slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в<br> телефоне!</span>
-
-    <!-- Блок с редактором -->
-
-    <section class="redactor">
-      <div class="redactor__photo-upload">
-        <img src="#" alt="yours-photo">
-      </div>
-      <form action="#" method="post">
-        <span class="predactor__crop predactor__crop--active"></span>
-        <input type="range" name="level" step="1">
-
-        <span class="redactor__contrast"></span>
-        <input type="range" name="level" step="1">
-
-        <span class="redactor__fill"></span>
-        <input type="range" name="level" step="1">
-      </form>
-      <div class="line"></div>
-      <a class="redactor__photo-post btn" href="#">Запостить</a>
-      <a class="redactor__photo-cancel btn" href="#">Отмена</a>
-    </section>
-  </main>
-
-
-<!--  ////////////////////////  FOOTER //////////////////////////
-  ///////////////////////////////////////////////////////////////////-->
-
-
-  <footer class="page-footer">
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">215</span>
+          </div>
+        </article>
+        <article class="card">
+          <figure class="card__card-figure">
+            <img class="card__card-sergei" src="http://placehold.it/280x180" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Сергей</span>
+              <span class="card__comment-time">(25 часов назад)</span>
+              <p class="card__comment-text">Самая кубанская в мире!</p>
+            </div>
+          </div>
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">4</span>
+          </div>
+        </article>
+        <article class="card">
+          <figure class="card__card-figure">
+            <img class="card__card-maxim" src="http://placehold.it/280x180" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Максим</span>
+              <span class="card__comment-time">(40 часов назад)</span>
+              <p class="card__comment-text">Где снег-то?</p>
+            </div>
+          </div>
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">150</span>
+          </div>
+        </article>
+        <article class="card">
+          <figure class="card__card-figure">
+            <img class="card__card-nadejda" src="http://placehold.it/280x180" alt="photo">
+          </figure>
+          <div class="card__card-content">
+            <div class="card__card-comment">
+              <span class="card__comment-author">Надежда</span>
+              <span class="card__comment-time">(45 часов назад)</span>
+              <p class="card__comment-text">Всем GM и взаимные лайки!</p>
+            </div>
+          </div>
+          <div class="card__card-like">
+            Нравится:
+            <span class="card__likes-num">2560</span>
+          </div>
+        </article>
+      </section>
+      <p class="slogan">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+      <section class="redactor">
+        <img src="http://placehold.it/280x375" alt="redactor__photo-upload">
+        <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="crop"></label>
+          <input class="redactor__crop redactor__crop--active" type="radio" name="redactor" value="crop" id="crop">
+          <label for="contrast"></label>
+          <input class="redactor__contrast" type="radio" name="redactor" value="contrast" id="contrast">
+          <label for="fill"></label>
+          <input class="redactor__fill" type="radio" name="redactor" value="fill" id="fill">
+          <div class="form btns">
+            <input class="redactor__photo-post btn" type="submit" name="btn-send" id="btn-send" value="Запостить">
+            <input class="redactor__photo-cancel btn" type="submit" name="btn-cancel" id="btn-cancel" value="Отмена">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
       <a class="page-footer__logo" href="#"><img src="#" alt="logo"></a>
       <span class="social-links">
         <a class="social-link social-links--tweet" href="#">tweet</a>
@@ -199,6 +164,6 @@
          Разработано
         <a class="page-footer__copyright-icon"><img src="#" alt="htmlacademy"></a>
       </span>
-  </footer>
+    </footer>
   </body>
 </html>
