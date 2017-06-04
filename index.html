@@ -19,7 +19,7 @@
     <nav class="main-nav main-nav--open">
       <span class="main-nav__toggler"><span></span></span>
       <div class="main-nav__wrapper">
-	      <ul class="main‐nav__list">
+        <ul class="main‐nav__list">
 	        <li class="main‐nav__item main‐nav__item‐‐active">Главная</li>
 	        <li class="main‐nav__item"><a href="#">Фотографии</a></li>
 	        <li class="main‐nav__item"><a href="#">Конкурс</a></li>
@@ -32,133 +32,111 @@
 
     <div class="intro-block">
       <a class="intro-block btn" href="#">Скачать приложение</a>
-      <div class="intro-block icon-os">
-        <a class="icon-os__apple"></a>
-        <a class="icon-os__android"></a>
-        <a class="icon-os__microsoft"></a>
+      <div class="icon-os">
+        <a class="icon-os__item--apple"></a>
+        <a class="icon-os__item--android"></a>
+        <a class="icon-os__item--microsoft"></a>
       </div>
       <p class="intro-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </header>
-   
-<!--  ////////////////////////  MAIN //////////////////////////
-  ///////////////////////////////////////////////////////////////////-->
-
   <main>
-  <!-- блок преимуществ -->
-   
-  <section class="features-block">
-    <div class="features-block__wrapper">
-      <h2>Устали от серости мегаполиса?<br>
-          Нам есть, что вам предложить!</h2>
-
-      <div class="features-block__item features-block__item--happy">
-        <h3>Поднимает настроение</h3>
-        <p class="features-block__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      </div>
-
-      <div class="features-block__item features-block__item--decoration">
-        <h3>Меняет мир вокруг</h3>
+    <section class="features-block">
+      <div class="features-block__wrapper">
+        <h2 class="features-block__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features-block__title">Нам есть, что вам предложить!</h2>
+        <div class="features-block__item">
+          <h3 class="features-block__item-title">Поднимает настроение</h3>
+          <p class="features-block__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features-block__item">
+        <h3 class="features-block__item-title">Меняет мир вокруг</h3>
         <p class="features-block__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="features-block__item features-block__item--img-bg">
+          <h3 class="features-block__item-title">Заводит новых друзей</h3>
+          <p class="features-block__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
       </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
 
-      <div class="features-block__item features-block__item--friends features-block__item--friends-mobile">
-        <h3>Заводит новых друзей</h3>
-        <p class="features-block__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
+        <div class="reviews__toggles slider__pagination">
+          <label class="slider__pagination" for="reviews-input-1">1</label>
+          <label class="slider__pagination" for="reviews-input-2">2</label>
+          <label class="slider__pagination" for="reviews-input-3">3</label>
+        </div>
 
-      <div class="features-block__item features-block--analysis">
-        <img class="analysis-img" src="#" alt="clock">
-        <h3>Эффект на 24 часа!</h3>
-        <p class="features-block__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки</p>
-        <a class="analysis-more" href="#">Узнать больше об исследовании</a>
-      </div>
-    </div>
-  </section>
-
-<!-- блок отзывы -->
-
-  <section class="reviews">
-    <div class="reviews__wrapper">
-      <div class="reviews__slider-wrapper slider">
-        <div class="reviews__list-wrapper slider__wrapper">
-          <div class="reviews__list slider__inner">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__auhor-name">Николай Петров</cite>
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенным фотографии!</p>
-            </blockquote>
+        <div class="reviews slider-inner">
+          <div class="reviews__items slider-slides">
+            <div class="reviews__item slider__item">
+              <b class="reviews__item-title">Николай Петров</b>
+              <p class="reviews__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
           </div>
         </div>
-
-        <div class="reviews__pagination slider__pagination">
-          <span class="slider__pagination-item slider__pagination-item--active"></span>
-          <span class="slider__pagination-item"></span>
-          <span class="slider__pagination-item"></span>
-        </div>
       </div>
-    </div>
-  </section>
-
-<!-- блок цены -->
-
-<!-- как сделать его слайдером? -->
-
-  <section class="price">
-    <div class="price__wrapper">
-      <ul class="price__table-title">
-        <li class="price__cell price__cell--none"></li>
-        <li class="price__cell">база<br>1,99 USD</li>
-        <li class="price__cell price__cell--hit">
-          <span class="price__cell-hit">хит<span>
-  стандарт<br>3,99 USD></li>
-
-        <li class="price__cell">анлим<br>9,99 USD></li>
-      </ul>
-      <ul class="price__table-value">
-        <li class="price__cell-title">Розовый фильтр</li>
-        <li class="price__cell">yes</li>
-        <li class="price__cell">yes</li>
-        <li class="price__cell">yes</li>
-      </ul>
-      <ul class="price__table-value">
-        <li class="price__cell-title">Смайлики</li>
-        <li class="price__cell">no</li>
-        <li class="price__cell">yes</li>
-        <li class="price__cell">yes</li>
-      </ul>
-      <ul class="price__table-value">
-        <li class="price__cell-title">Комментарии</li>
-        <li class="price__cell">no</li>
-        <li class="price__cell">no</li>
-        <li class="price__cell">yes</li>
-      </ul>
-    </div>
-  </section>
-
-<!-- блок Контакты -->
-
-  <section class="contacts">
-    <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
-
-    <div class="contacts-item">
-      <span class="contacts-item__text">Звоните:</span>
-      <span class="contacts-item__num">+7 (812) 555-66-66</span>
-    </div>
-    <div class="contacts-item">
-      <span class="contacts-item__text">Пишите:</span>
-      <span class="contacts-item__mail">mail@htmlacademy.ru</span>
-    </div>
-    <div class="contacts-item">
-      <span class="contacts-item__text">Приезжайте в гости:</span>
-      <span class="contacts-item__adress">ул. Большая<br>Конюшенная, 19/8  </span>
-    </div>
-    
-    <div class="contacts-map">
-    </div>
-  </section>
+    </section>
+    <section class="price">
+      <div class="table slider">
+        <table class="table-price">
+          <thead class="table-price__head">
+            <tr>
+              <th class="table-price__name">База<span class="table-head__sum"> 1,99 USD</span></th>
+              <th class="table-price__name table-price__name--hit">Стандарт<span class="table-head__sum"> 3,99 USD</span></th>
+              <th class="table-price__name">Анлим<span class="table-head__sum"> 9,99 USD</span></th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+          <tr>
+            <td class="table-body__cell table-body__cell--check">Розовый фильтр</td>
+            <td class="table-body__cell table-body__cell--check">Розовый фильтр</td>
+            <td class="table-body__cell table-body__cell--check">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="table-body__cell table-body__cell--uncheck">Смайлики</td>
+            <td class="table-body__cell table-body__cell--check">Смайлики</td>
+            <td class="table-body__cell table-body__cell--check">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="table-body__cell table-body__cell--uncheck">Комментарии</td>
+            <td class="table-body__cell table-body__cell--check">Комментарии</td>
+            <td class="table-body__cell table-body__cell--check">Комментарии</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="table__toggles slider__pagination">
+          <label class="slider__pagination" for="table-input-1"></label>
+          <label class="slider__pagination" for="table-input-2"></label>
+          <label class="slider__pagination" for="table-input-3"></label>
+        </div>
+        <input class="slider__input" type="radio" name="table" id="table-input-1">
+        <input class="slider__input" type="radio" name="table" id="table-input-2" checked>
+        <input class="slider__input" type="radio" name="table" id="table-input-3">
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Остались вопросы?Свяжитесь с нами!</h2>
+      <div class="contacts__item">
+        <div class="contacts-item__text">Звоните:</div>
+        <div class="contacts-item__num">+7 (812) 555-66-66</div>
+      </div>
+      <div class="contacts-item">
+        <div class="contacts-item__text">Пишите:</div>
+        <div class="contacts-item__mail">mail@htmlacademy.ru</div>
+      </div>
+      <div class="contacts-item">
+        <div class="contacts-item__text">Приезжайте в гости:</div>
+        <div class="contacts-item__adress">ул. Большая<br>Конюшенная, 19/8</div>
+      </div>
+      <div class="contacts-map">
+      </div>
+    </section>
   </main>
-
-
-
   </body>
 </html>
+
