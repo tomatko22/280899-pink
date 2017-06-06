@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-img" src="#" alt="Pink">
+      </a>
+      <nav class="main-nav main-nav--open">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="foto.html">Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <button class="btn" type="button">Открыть</button>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+    <main>
+      <div class="main-slogan">
+        <p class="main-slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8211; 1000 миль на вашу бонусную карту!</p>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form-block">
+          <div class="form-block__wrapper">
+            <div class="form-field">
+              <label class="form-field__label" for="lastname">Фамилия:</label>
+              <input class="form-field__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию &#128945;">
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="firstname">Имя:</label>
+              <input class="form-field__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя &#128945;">
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="patronymic">Отчество:</label>
+              <input class="form-field__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-block">
+          <div class="form-block__wrapper">
+            <h2 class="form-block__title">Ваши безбашенные достижения в путешествии
+            </h2>
+            <div class="form-field">
+              <input class="form-field__input" type="checkbox" name="selfie" id="selfie" checked>
+              <label class="form-field__label" for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="checkbox" name="beach" id="beach" checked>
+              <label class="form-field__label" for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="checkbox" name="norris" id="norris" >
+              <label class="form-field__label" for="norris">Видел Чака Норриса</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="checkbox" name="gift" id="gift">
+              <label class="form-field__label" for="gift">Накупил сувениров</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="checkbox" name="tower" id="tower" checked>
+              <label class="form-field__label" for="tower">Удержал башню</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="checkbox" name="hotel" id="hotel">
+              <label class="form-field__label" for="hotel">Разгромил отель</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-block">
+          <div class="form-block__wrapper">
+            <div class="form-field">
+              <label class="form-field__label" for="phone-number">Номер телефона</label>
+              <input class="form-field__input" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="email">Адрес почты</label>
+              <input class="form-field__input" type="text" name="email" id="email" placeholder="Введите почту &#128945;">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-block">
+          <div class="form-block__wrapper">
+            <h2 class="form-block__title">С каким приложением путешествовали?</h2>
+            <div class="form-field">
+              <input class="form-field__input" type="radio" name="app" value="ios" id="ios">
+              <label class="form-field__label" for="ios">Pink на iOS</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="radio" name="app" value="android" id="android">
+              <label class="form-field__label" for="android">Pink на Android</label>
+            </div>
+            <div class="form-field">
+              <input class="form-field__input" type="radio" name="app" value="Windows" id="windows">
+              <label class="form-field__label" for="windows">Windows Phone</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-block">
+          <div class="form-block__wrapper">
+            <h2 class="form-block__title">Опишите свои эмоции</h2>
+            <textarea class="form-block__textarea-comment" name="comment" id="comment-field" rows="6" cols="25">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+        </fieldset>
+        <input class="btn-send" type="submit" value="Отправить форму">
+        <div class="form__info-legend">
+          <span class="form__info-legend-star">&#128945;</span> &#8211; обязательные поля
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img src="#" alt="logo">
+      </a>
+      <span class="social-links">
+        <a class="social-link social-links--tweet" href="#">tweet</a>
+        <a class="social-link social-links--fb" href="#">facebook</a>
+        <a class="social-link social-links--youtube" href="#">youtube</a>
+      </span>
+      <span class="page-footer__copyright">
+          Разработано
+        <a class="page-footer__copyright-icon">
+          <img src="#" alt="htmlacademy">
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>
