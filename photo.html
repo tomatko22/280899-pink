@@ -2,22 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
-      <a href="#">
-        <img class="page-header__logo-img" src="#" alt="Pink">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
+        </a>
+        <button class="btn" type="button">Открыть</button>
+      </div>
       <nav class="main-nav main-nav--open">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="foto.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main‐nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main‐nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main‐nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main‐nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
-      <button class="main-nav btn" type="button">Открыть</button>
       <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
     <main>
@@ -25,9 +28,9 @@
         <p class="main-slogan__text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
       </div>
       <div class="panorama">
-        <a class="photo-fullscreen" href="#">
-          <figure class="photo-fullscreen__figure">
-            <img class="photo-fullscreen__img" src="http://placehold.it/320x135" alt="photo">
+        <a class="photo-fullscreen__link" href="#">
+          <figure class="photo-fullscreen__figure-panorama">
+            <img class="photo-fullscreen__img" src="/img/panorama-mobile@1x.jpg" alt="photo">
           </figure>
         </a>
         <div class="photo-review">
@@ -41,9 +44,9 @@
       </div>
       <section class="photos">
         <article class="photo">
-          <a class="photo-fullscreen" href="#">
+          <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="http://placehold.it/280x180" alt="photo">
+              <img class="photo__img" src="/img/photo-1-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -56,9 +59,9 @@
           </div>
         </article>
         <article class="photo">
-          <a class="photo-fullscreen" href="#">
+          <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="http://placehold.it/280x180" alt="photo">
+              <img class="photo__img" src="/img/photo-2-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -71,9 +74,9 @@
           </div>
         </article>
         <article class="photo">
-          <a class="photo-fullscreen" href="#">
+          <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="http://placehold.it/280x180" alt="photo">
+              <img class="photo__img" src="/img/photo-3-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -86,9 +89,9 @@
           </div>
         </article>
         <article class="photo">
-          <a class="photo-fullscreen" href="#">
+          <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="http://placehold.it/280x180" alt="photo">
+              <img class="photo__img" src="/img/photo-4-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -101,9 +104,9 @@
           </div>
         </article>
         <article class="photo">
-          <a class="photo-fullscreen" href="#">
+          <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="http://placehold.it/280x180" alt="photo">
+              <img class="photo__img" src="/img/photo-5-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -116,9 +119,9 @@
           </div>
         </article>
         <article class="photo">
-          <a class="photo-fullscreen" href="#">
+          <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="http://placehold.it/280x180" alt="photo">
+              <img class="photo__img" src="/img/photo-6-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -132,12 +135,12 @@
         </article>
       </section>
       <div class="main-slogan">
-        <p class="main-slogan__text">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="main-slogan__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="redactor">
         <form class="redactor-form" action="https://echo.htmlacademy.ru/" method="post">
           <figure class="redactor-form__figure">
-            <img class="redactor-form__photo-upload" src="http://placehold.it/280x375" alt="photo">
+            <img class="redactor-form__photo-upload" src="/img/photo-7-mobile@1x.jpg" alt="photo">
           </figure>
           <div class="redactor-form__item">
             <label class="redactor-form__item-label" for="crop"></label>
@@ -158,14 +161,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#"><img src="#" alt="logo"></a>
+      <a class="page-footer__logo" href="#"><img src="/img/logo-pink-blue-mobile.svg" alt="logo"></a>
       <span class="social-links">
         <a class="social-link social-links--tweet" href="#">tweet</a>
         <a class="social-link social-links--fb" href="#">facebook</a>
         <a class="social-link social-links--youtube" href="#">youtube</a>
       </span>
       <span class="page-footer__copyright">Разработано
-        <a class="page-footer__copyright-icon"><img src="#" alt="htmlacademy"></a>
+        <a class="page-footer__copyright-icon"><img src="/img/logo-htmlacademy.svg" alt="htmlacademy"></a>
       </span>
     </footer>
   </body>

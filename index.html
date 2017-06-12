@@ -2,24 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img class="page-header__logo-img" src="#" alt="Pink">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
+        </a>
+        <button class="btn" type="button">Открыть</button>
       </div>
       <nav class="main-nav main-nav--open">
-        <div class="main-nav__wrapper">
-          <ul class="main‐nav__list">
-            <li class="main‐nav__item main‐nav__item‐‐active">Главная</li>
-            <li class="main‐nav__item"><a href="#">Фотографии</a></li>
-            <li class="main‐nav__item"><a href="#">Конкурс</a></li>
-            <li class="main‐nav__item"><a href="#">Html academy</a></li>
-          </ul>
-        </div>
+        <ul class="main‐nav__list">
+          <li class="main‐nav__item main‐nav__item‐‐active"><a class="main‐nav__link" href="#">Главная</a></li>
+          <li class="main‐nav__item"><a class="main‐nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main‐nav__item"><a class="main‐nav__link" href="form.html">Конкурс</a></li>
+          <li class="main‐nav__item"><a class="main‐nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
+        </ul>
       </nav>
-      <button class="btn" type="button">Открыть</button>
       <div class="intro-block">
         <a class="btn" href="#">Скачать приложение</a>
         <div class="intro-block__icons">
@@ -56,7 +57,7 @@
         <input class="reviews__input" type="radio" name="reviews" id="reviews-input-2">
         <input class="reviews__input" type="radio" name="reviews" id="reviews-input-3">
         <div class="reviews__toggles">
-          <label class="reviews__toggle" for="reviews-input-1"></label>
+          <label class="reviews__toggle reviews__toggle--active" for="reviews-input-1"></label>
           <label class="reviews__toggle" for="reviews-input-2"></label>
           <label class="reviews__toggle" for="reviews-input-3"></label>
         </div>
