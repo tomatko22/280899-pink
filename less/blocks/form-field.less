@@ -1,0 +1,24 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 30px;
+
+  &--grey {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form-field__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @pink;
+
+  &--grey {
+    text-transform: none;
+    color: @blue;
+  }
+}
