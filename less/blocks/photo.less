@@ -1,8 +1,45 @@
 .photo {
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 20px;
-  outline: 1px solid grey;
+  background-color: @lightgrey;
+  outline: 1px solid @blue;
+}
+
+.photo:last-child {
+  margin-bottom: 0;
 }
 
 .photo-fullscreen__figure {
   margin: 0;
+  padding: 0;
+    outline: 1px solid @blue;
+}
+
+@media @tablet {
+  .photo {
+    width: 300px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    &--panorama {
+      width: 660px;
+    }
+  }
+
+  .photo__img {
+    width: 300px;
+    height: 300px;
+  }
+  .photo-fullscreen__figure {
+    outline: 1px solid @blue;
+  }
+}
+@media @desktop {
+  .photo__img {
+    width: 300px;
+    height: 400px;
+  }
 }

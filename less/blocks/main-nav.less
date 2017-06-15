@@ -4,10 +4,12 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .main-nav__link {
@@ -20,4 +22,28 @@
   text-decoration: none;
   text-align: center;
   color: @white;
+}
+
+@media @tablet {
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+
+@media @desktop {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 }

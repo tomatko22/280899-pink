@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-color: @darkblue;
-
 }
 
 .page-header__wrapper {
@@ -19,4 +18,22 @@
   text-align: center;
   color: @white;
   padding: 15px 40px 85px 40px;
+}
+
+@media @tablet {
+  .page-header {
+    position: relative;
+    padding: 195px 0px;
+    padding-top: 0;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+  .page-header__title {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: @white;
+    padding: 15px 40px 85px 40px;
+  }
 }

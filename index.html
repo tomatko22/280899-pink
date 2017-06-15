@@ -15,13 +15,22 @@
       </div>
       <nav class="main-nav main-nav--open">
         <ul class="main‐nav__list">
-          <li class="main‐nav__item main‐nav__item‐‐active"><a class="main‐nav__link" href="index.html">Главная</a></li>
-          <li class="main‐nav__item"><a class="main‐nav__link" href="photo.html">Фотографии</a></li>
-          <li class="main‐nav__item"><a class="main‐nav__link" href="form.html">Конкурс</a></li>
-          <li class="main‐nav__item"><a class="main‐nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
+          <li class="main‐nav__item main‐nav__item‐‐active">
+            <a class="main‐nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main‐nav__item">
+            <a class="main‐nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main‐nav__item">
+            <a class="main‐nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main‐nav__item">
+            <a class="main‐nav__link" href="https://htmlacademy.ru/">Html academy</a>
+          </li>
         </ul>
       </nav>
       <div class="intro-block">
+        <p class="intro-block__title">Взгляните на жизнь иначе!</p> <!-- скрыть на мобильной версии -->
         <a class="btn" href="#">Скачать приложение</a>
         <div class="intro-block__icons">
           <a class="intro-block__icon intro-block__icon--apple"></a>
@@ -33,9 +42,9 @@
     </header>
     <main>
       <section class="features-block">
-        <div class="features-block__wrapper">
+        <div class="features-block__wrapper features-block__wrapper--white">
           <p class="features-block__title">Устали от серости мегаполиса?</p>
-          <p class="features-block__title">Нам есть, что вам предложить!</p>
+          <p class="features-block__title features-block__title--tablet"> Нам есть, что вам<br> предложить!</p>
         </div>
         <div class="features-block__wrapper">
           <div class="features-block__item">
@@ -46,10 +55,16 @@
             <h2 class="features-block__item-title">Меняет мир вокруг</h2>
             <p class="features-block__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-          <div class="features-block__item features-block__item--img-bg">
+          <div class="features-block__item">
             <h2 class="features-block__item-title">Заводит новых друзей</h2>
             <p class="features-block__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
+        </div>
+        <!-- скрыть на мобильной версии -->
+        <div class="features-block__research">
+          <b class="features-block__research-title">Эффект на 24 часа!</b>
+          <p class="features-block__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="features-block__research-more">Узнать больше об иследовании</a>
         </div>
       </section>
       <section class="reviews">
@@ -64,18 +79,21 @@
         <div class="reviews__inner">
           <div class="reviews__items">
             <div class="reviews__item">
+              <span class="reviews__item-description">25 лет, водитель трамвая</span><!-- скрыть на мобильной версии -->
               <b class="reviews__item-title">Николай Петров</b>
-              <p class="reviews__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
 
             <div class="reviews__item">
               <b class="reviews__item-title">Николай Петров</b>
-              <p class="reviews__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="reviews__item-description">25 лет, водитель трамвая</span> <!-- скрыть на мобильной версии -->
+              <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
 
             <div class="reviews__item">
               <b class="reviews__item-title">Николай Петров</b>
-              <p class="reviews__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="reviews__item-description">25 лет, водитель трамвая</span> <!-- скрыть на мобильной версии -->
+              <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </div>
         </div>
@@ -85,23 +103,27 @@
           <table class="table-price">
             <thead class="table-price__head">
               <tr class="table-price__row">
-                <th class="table-price__name">База<span class="table-price__sum"> 1,99 USD</span></th>
-                <th class="table-price__name table-price__name--hit">Стандарт<span class="table-price__sum"> 3,99 USD</span></th>
-                <th class="table-price__name">Анлим<span class="table-price__sum"> 9,99 USD</span></th>
+                <th class="table-price__name table-price__name--hidden"><span class="table-price__sum"></span></th>
+                <th class="table-price__name">База<br><span class="table-price__sum">1,99 USD</span></th>
+                <th class="table-price__name table-price__name--hit">Стандарт<br><span class="table-price__sum">3,99 USD</span></th>
+                <th class="table-price__name">Анлим<br><span class="table-price__sum">9,99 USD</span></th>
               </tr>
             </thead>
             <tbody class="table-price__body">
             <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--hidden">Розовый фильтр</td>
               <td class="table-price__cell table-price__cell--check">Розовый фильтр</td>
               <td class="table-price__cell table-price__cell--check">Розовый фильтр</td>
               <td class="table-price__cell table-price__cell--check">Розовый фильтр</td>
             </tr>
             <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--hidden">Смайлики</td>
               <td class="table-price__cell table-price__cell--uncheck">Смайлики</td>
               <td class="table-price__cell table-price__cell--check">Смайлики</td>
               <td class="table-price__cell table-price__cell--check">Смайлики</td>
             </tr>
             <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--hidden">Комментарии</td>
               <td class="table-price__cell table-price__cell--uncheck">Комментарии</td>
               <td class="table-price__cell table-price__cell--check">Комментарии</td>
               <td class="table-price__cell table-price__cell--check">Комментарии</td>
@@ -120,20 +142,39 @@
       </section>
       <section class="contacts">
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts__item">
-          <div class="contacts-item__title">Звоните:</div>
-          <div class="contacts-item__content">+7 (812) 555-66-66</div>
-        </div>
-        <div class="contacts-item">
-          <div class="contacts-item__title">Пишите:</div>
-          <div class="contacts-item__content">mail@htmlacademy.ru</div>
-        </div>
-        <div class="contacts-item">
-          <div class="contacts-item__title">Приезжайте в гости:</div>
-          <div class="contacts-item__content">ул. Большая Конюшенная, 19/8</div>
+        <div class="contacts__wrapper">
+          <div class="contacts__item contacts-item--1">
+            <div class="contacts-item__title">Звоните:</div>
+            <div class="contacts-item__content">+7 (812) 555-66-66</div>
+          </div>
+          <div class="contacts-item contacts-item--2">
+            <div class="contacts-item__title">Пишите:</div>
+            <div class="contacts-item__content">mail@htmlacademy.ru</div>
+          </div>
+          <div class="contacts-item contacts-item--3">
+            <div class="contacts-item__title ">Приезжайте в гости:</div>
+            <div class="contacts-item__content">ул. Большая Конюшенная, 19/8</div>
+          </div>
         </div>
         <div class="contacts-map"></div>
       </section>
     </main>
+    <!-- скрыть на мобильной версии -->
+    <footer class="page-footer page-footer--index">
+      <a class="page-footer__logo" href="#">
+        <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+      </a>
+      <span class="social-links">
+        <a class="social-link social-links--tweet" href="#">tweet</a>
+        <a class="social-link social-links--fb" href="#">facebook</a>
+        <a class="social-link social-links--youtube" href="#">youtube</a>
+      </span>
+      <span class="page-footer__copyright">
+            Разработано
+        <a class="page-footer__copyright-icon">
+          <img src="img/logo-htmlacademy.svg" alt="htmlacademy">
+        </a>
+      </span>
+    </footer>
   </body>
 </html>

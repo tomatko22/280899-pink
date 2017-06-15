@@ -1,4 +1,26 @@
 .intro-block {
-  background-color: @blue;
   color: @white;
+}
+
+.intro-block__title {
+  display: none;
+}
+
+
+@media @tablet {
+  .intro-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .intro-block__title {
+  display: block;
+}
+
+
+
+
+
+
 }
