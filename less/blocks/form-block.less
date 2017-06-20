@@ -1,6 +1,5 @@
 .form-block {
-  border: 0;
-  padding-top: 40px;
+  border: none;
 
   &--grey {
     background-color: @lightgrey;
@@ -26,4 +25,83 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+@media @tablet {
+  .form-block {
+    position: relative;
+    margin: 0 20px;
+    margin-bottom: 67px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px @grey;
+    border-radius: 1px;
+  }
+  .form-block--grey {
+    background-color: @white;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .form-block--name {
+    position: static;
+    order: -2;
+    margin-bottom: 26px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 44px;
+    box-shadow: none;
+  }
+
+  .form-block--achievs {
+    padding-bottom: 49px;
+    padding-top: 54px;
+  }
+
+  .form-block--contacts {
+    padding-top: 47px;
+    padding-bottom: 20px;
+    margin-bottom: 69px;
+  }
+
+  .form-block--apps {
+    order: -1;
+    padding-top: 54px;
+    padding-bottom: 52px;
+    margin-bottom: 69px;
+  }
+
+  .form-block--comment {
+    padding-top: 47px;
+    margin-bottom: 73px;
+  }
+
+
+  .form-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+
+    &--name {
+      border: 0;
+      padding: 0;
+    }
+  }
+
+  .form-block__title {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    padding: 13px 23px;
+    white-space: nowrap;
+    background-color: @white;
+  }
+  .form-block__textarea-comment {
+    // box-sizing: border-box;
+    padding: 25px 15px;
+    padding-right: 0;
+
+  }
 }

@@ -1,20 +1,110 @@
 .main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
   background-color: @blue;
   color: @white;
 }
+.main-nav__logo {
+  display: block;
+}
+
+.main-nav__btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+
+  display: block;
+  width: 50px;
+  height: 25px;
+
+  font-size: 0;
+
+  background-color: @blue;
+  cursor: pointer;
+
+  border: none;
+}
+
+.main-nav--closed .main-nav__btn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 0px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white,
+              0 16px 0 0 @white;
+}
+
+.main-nav--closed .main-nav__btn:hover::before {
+  background-color: @pink;
+  box-shadow: 0 8px 0 0 @pink,
+              0 16px 0 0 @pink;
+}
+
+.main-nav--closed .main-nav__btn:active::before {
+  background-color: @darkpink;
+  box-shadow: 0 8px 0 0 @darkpink,
+              0 16px 0 0 @darkpink;
+}
+
+.main-nav--opened .main-nav__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -3px;
+
+    width: 32px;
+    height: 4px;
+
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @darkpink;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  padding: 22px 20px;
+}
 
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav__link {
+.main-nav__item a {
   display: block;
-  padding: 20px 0px;
+  padding: 28px 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -22,28 +112,81 @@
   text-decoration: none;
   text-align: center;
   color: @white;
+
+  background-color: @blue;
+  border-top: 1px solid @darkgrey;
+  border-bottom: 1px solid @smoky;
 }
 
+.main-nav__item a {
+  &:hover {
+    color: @pink;
+    border-top: 2px solid black;
+  }
+
+  &:active {
+    color: @darkpink;
+    border-top: 2px solid black;
+  }
+}
+
+@media @mobile-only {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+  .main-nav__wrapper {
+    background-color: #1d2631;
+  }
+}
+
+
 @media @tablet {
+  .main-nav {
+    width: 660px;
+  }
   .main-nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    width: 660px;
   }
 }
 
 
 
 @media @desktop {
+  .main-nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .main-nav__btn {
+    display: none;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 620px;
     margin: 0;
     padding: 0;
     list-style: none;
-}
+  }
+  .main-nav__item a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    color: @white;
+
+    background-color: transparent;
+    border: none;
+  }
 }

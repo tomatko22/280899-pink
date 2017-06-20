@@ -6,11 +6,6 @@
   background-color: @darkblue;
 }
 
-.page-header__wrapper {
-  padding: 22px 20px;
-  background-color: rgba(29,38,49, 0.3);
-}
-
 .page-header__title {
   font-weight: 300;
   font-size: 24px;
@@ -35,5 +30,12 @@
     text-align: center;
     color: @white;
     padding: 15px 40px 85px 40px;
+  }
+}
+
+@media @desktop {
+.page-header {
+    display: flex;
+    flex-direction: column;
   }
 }
