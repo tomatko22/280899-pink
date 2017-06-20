@@ -23,7 +23,7 @@
   color: @pink;
 }
 
-.contacts-item--2 {
+.contacts__item--2 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -35,28 +35,30 @@
   }
 
   .contacts__title {
-    margin: 0 145px;
-    padding-bottom: 50px;
+    margin: 55px 145px;
     font-size: 40px;
     line-height: 48px;
   }
 
   .contacts__wrapper {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 
-  .contacts-item {
-    width: 300px;
+  .contacts__item {
+    margin-bottom: 55px;
   }
-  .contacts-item:not(:last-child) {
-    margin-bottom: 43px;
+
+  .contacts__item--2 {
+    margin-top: 0;
   }
-  .contacts-item--2 {
-    margin-top: 0px;
+
+  .contacts__item:last-child {
+    margin-bottom: 0;
   }
+
   .contacts-item__title {
     margin-bottom: 4px;
   }
