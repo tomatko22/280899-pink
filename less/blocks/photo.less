@@ -3,17 +3,17 @@
   margin: 0 auto;
   margin-bottom: 20px;
   background-color: @lightgrey;
-  outline: 1px solid @blue;
 }
 
 .photo:last-child {
   margin-bottom: 0;
 }
-
+.photo-fullscreen__link {
+  display: block;
+}
 .photo-fullscreen__figure {
+  height: 180px;
   margin: 0;
-  padding: 0;
-    outline: 1px solid @blue;
 }
 
 @media @tablet {
@@ -34,7 +34,7 @@
     height: 300px;
   }
   .photo-fullscreen__figure {
-    outline: 1px solid @blue;
+
   }
 }
 @media @desktop {
