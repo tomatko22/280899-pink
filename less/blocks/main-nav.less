@@ -132,13 +132,11 @@
   }
 }
 
-@media @mobile-only, @tablet {
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-  .main-nav__wrapper {
-    background-color: #1d2631;
-  }
+.main-nav--closed .main-nav__item {
+  display: none;
+}
+.main-nav__wrapper {
+  background-color: #1d2631;
 }
 
 
@@ -157,7 +155,9 @@
     top: 20px;
     right: 20px;
   }
-
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
 }
 
 
@@ -199,5 +199,8 @@
 
     background-color: transparent;
     border: none;
+  }
+  .main-nav--closed .main-nav__item {
+    display: block;
   }
 }
