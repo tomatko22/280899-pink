@@ -22,21 +22,34 @@
 
 .photo-review__text {
   margin: 0;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
+.photo-review__likes {
+    color: @pink;
+  }
 
 @media @tablet {
   .photo-review {
-    padding: 31px 27px;
+    height: 155px;
+    padding: 25px 27px;
+    box-sizing: border-box;
+  }
+  .photo-review__likes {
+    color: @pink;
   }
 }
 
 @media @desktop {
   .gallery-review__top {
     margin-bottom: -5px;
+  }
+  .photo-review__likes {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: @pink;
   }
 }

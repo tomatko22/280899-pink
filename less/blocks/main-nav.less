@@ -21,7 +21,7 @@
 
   font-size: 0;
 
-  background-color: @blue;
+  background-color: #1d2631;
   cursor: pointer;
 
   border: none;
@@ -54,6 +54,7 @@
 }
 
 .main-nav--opened .main-nav__btn {
+  width: 25px;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -131,7 +132,7 @@
   }
 }
 
-@media @mobile-only {
+@media @mobile-only, @tablet {
   .main-nav--closed .main-nav__item {
     display: none;
   }
@@ -156,6 +157,7 @@
     top: 20px;
     right: 20px;
   }
+
 }
 
 
