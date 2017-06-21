@@ -88,12 +88,16 @@
 }
 
 @media @tablet {
+  .redactor {
+    padding: 58px 20px;
+    padding-bottom: 54px;
+  }
   .redactor-form {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: @lightgrey;
-    padding-top: 57px;
   }
   .redactor-form__scale {
     display: none;
@@ -135,7 +139,7 @@
   .redactor-form__item {
     width: 275px;
     height: 200px;
-    margin-left: 40px;
+    margin-left: 55px;
     padding: 0;
   }
   .redactor-form__item-container {
@@ -163,13 +167,14 @@
   }
   .redactor-photofull__link {
     display: block;
+    padding: 0;
     height: 400px;
   }
   .redactor-form__btn {
-    position: relative;
-    bottom: 185px;
-    left: 360px;
-
+    position: absolute;
+    bottom: 28px;
+    right: 0px;
+    padding: 0;
     border-top: none;
   }
 }
