@@ -1,33 +1,11 @@
-.page-header {
-  position: relative;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-color: @darkblue;
-}
 
-.page-header__title {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: auto;
-  text-align: center;
-  color: @white;
-  padding: 31px 40px 83px 40px;
-  margin: 0;
-}
+
 
 @media @tablet {
   .page-header {
-    position: relative;
-    padding-top: 0;
-  }
-  .page-header__title {
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    color: @white;
-    padding: 70px 40px 145px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 

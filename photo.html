@@ -30,17 +30,19 @@
           </li>
         </ul>
       </nav>
-      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
+    <div class="block">
+      <h1 class="block__title">Фотографии пользователей</h1>
+    </div>
     <main>
       <div class="main-slogan">
         <p class="main-slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <div class="panorama">
-        <a class="photo-fullscreen__link" href="#">
-          <figure class="photo-fullscreen__figure-panorama">
+        <a class="photo-fullscreen__link-panorama" href="#">
+
             <img class="photo-fullscreen__img" src="img/panorama-mobile@1x.jpg" width="320" height="137"  alt="photo">
-          </figure>
+
         </a>
         <div class="panorama__wrapper">
           <div class="photo-review photo-review--panorama">
@@ -154,13 +156,12 @@
         <p class="main-slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="redactor">
-        <form class="redactor-form" action="https://echo.htmlacademy.ru/" method="post">
-          <a class="redactor-photofull__link" href="#">
+         <a class="redactor-photofull__link" href="#">
             <figure class="redactor-form__figure">
               <img class="redactor-form__photo-upload" src="img/photo-7-mobile@1x.jpg" alt="photo">
             </figure>
           </a>
-
+        <form class="redactor-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="redactor-form__item">
             <div class="redactor-form__item-container">
               <div class="redactor-form__item-wrapper">
@@ -214,21 +215,6 @@
         </a>
       </span>
     </footer>
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__btn');
-
-
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

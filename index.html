@@ -29,7 +29,10 @@
           </li>
         </ul>
       </nav>
+    </header>
+    <main>
       <div class="intro-block">
+        <div class="intro-block__wrapper">
         <p class="intro-block__title">Взгляните на жизнь иначе!</p> <!-- скрыть на мобильной версии -->
         <a class="btn" href="#">Скачать приложение</a>
         <div class="intro-block__icons">
@@ -38,9 +41,8 @@
           <a class="intro-block__icon intro-block__icon--microsoft"></a>
         </div>
         <p class="intro-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
-    </header>
-    <main>
       <section class="features-block">
         <div class="features-block__wrapper features-block__wrapper--white">
           <p class="features-block__title">Устали от серости мегаполиса?</p>
@@ -64,18 +66,13 @@
         <div class="features-block__research">
           <b class="features-block__research-title">Эффект на 24 часа!</b>
           <p class="features-block__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a href="features-block__research-more">Узнать больше об иследовании</a>
+          <a class="features-block__research-more" href="#">Узнать больше об иследовании</a>
         </div>
       </section>
       <section class="reviews">
         <input class="reviews__input" type="radio" name="reviews" id="reviews-input-1" checked>
         <input class="reviews__input" type="radio" name="reviews" id="reviews-input-2">
         <input class="reviews__input" type="radio" name="reviews" id="reviews-input-3">
-        <div class="reviews__toggles">
-          <label class="reviews__toggle reviews__toggle--active" for="reviews-input-1"></label>
-          <label class="reviews__toggle" for="reviews-input-2"></label>
-          <label class="reviews__toggle" for="reviews-input-3"></label>
-        </div>
         <div class="reviews__inner">
           <div class="reviews__items">
             <div class="reviews__item">
@@ -96,6 +93,11 @@
               <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </div>
+        </div>
+        <div class="reviews__toggles">
+          <label class="reviews__toggle reviews__toggle--active" for="reviews-input-1"></label>
+          <label class="reviews__toggle" for="reviews-input-2"></label>
+          <label class="reviews__toggle" for="reviews-input-3"></label>
         </div>
       </section>
       <section class="price">
@@ -176,21 +178,6 @@
         </a>
       </span>
     </footer>
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__btn');
-
-
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

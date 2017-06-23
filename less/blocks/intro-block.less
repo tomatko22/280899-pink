@@ -1,5 +1,50 @@
 .intro-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 320px;
+  height: 670px;
+  margin-bottom: 50px;
+  background-color: @blue;
+  background-image:
+                    url("/img/iphone-hand-mobile@1x.png"),
+                    url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position:
+                      0%  25%,
+                      50% -38%;
   color: @white;
+
+}
+
+.intro-block__wrapper {
+  margin-bottom: 35px;
+  padding: 0px 20px;
+}
+
+.intro-block__icons {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.intro-block__icon {
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  margin-right: 30px;
+  vertical-align: middle;
+  text-decoration: none;
+  outline: 1px solid red;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.intro-block__text {
+  margin: 0;
+  text-align: center;
 }
 
 .intro-block__title {
@@ -10,11 +55,39 @@
 @media @tablet {
   .intro-block {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    width: 660px;
+    height: 620px;
+    margin-bottom: 60px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+// временно
+    background-image: none;
   }
+  .intro-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 300px;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+  }
+
+  .intro-block__icons {
+    margin-bottom: 40px;
+  }
+
   .intro-block__title {
     display: block;
+    width: 193px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
   }
 }

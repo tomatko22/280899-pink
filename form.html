@@ -29,8 +29,10 @@
           </li>
         </ul>
       </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
+    <div class="block">
+      <h1 class="block__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
     <main>
       <div class="main-slogan">
         <p class="main-slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8211; 1000 миль на вашу бонусную карту!</p>
@@ -139,21 +141,6 @@
         </a>
       </span>
     </footer>
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__btn');
-
-
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

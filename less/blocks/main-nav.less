@@ -1,5 +1,4 @@
 .main-nav {
-  position: relative;
   width: 320px;
   margin: 0 auto;
   background-color: @blue;
@@ -7,94 +6,50 @@
 }
 .main-nav__logo {
   display: block;
-  width: 77px;
+  width: 75px;
 }
-
-.main-nav__btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
+.main-nav__logo-img {
   display: block;
-  width: 50px;
-  height: 25px;
-
+  width: 75px;
+  height: 22px;
+}
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main-nav__btn {
+  display: block;
+  width: 26px;
+  height: 26px;
+  padding: 0;
   font-size: 0;
-
-  background-color: #1d2631;
+  background-color: @white;
   cursor: pointer;
-
   border: none;
 }
 
-.main-nav--closed .main-nav__btn::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 0px;
-
+.main-nav--closed .main-nav__btn {
   width: 50px;
-  height: 4px;
-
+  height: 25px;
   background-color: @white;
-  box-shadow: 0 8px 0 0 @white,
-              0 16px 0 0 @white;
-}
 
-.main-nav--closed .main-nav__btn:hover::before {
-  background-color: @pink;
-  box-shadow: 0 8px 0 0 @pink,
-              0 16px 0 0 @pink;
-}
-
-.main-nav--closed .main-nav__btn:active::before {
-  background-color: @darkpink;
-  box-shadow: 0 8px 0 0 @darkpink,
-              0 16px 0 0 @darkpink;
-}
-
-.main-nav--opened .main-nav__btn {
-  width: 25px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: -3px;
-
-    width: 32px;
-    height: 4px;
-
-    background-color: @white;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:hover::after {
+  &:hover {
     background-color: @pink;
   }
-
-  &:active::before,
-  &:active::after {
+  &:active {
     background-color: @darkpink;
   }
 }
 
-.main-nav__wrapper {
-  position: relative;
-  padding: 22px 20px;
+.main-nav--opened .main-nav__btn {
+  &:hover {
+    background-color: @pink;
+  }
+
+  &:active {
+    background-color: @darkpink;
+  }
 }
 
 .main-nav__list {
@@ -106,7 +61,7 @@
 
 .main-nav__item a {
   display: block;
-  padding: 28px 0px;
+  padding: 26px 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -115,6 +70,7 @@
   text-align: center;
   color: @white;
 
+  box-sizing: border-box;
   background-color: @blue;
   border-top: 1px solid @darkgrey;
   border-bottom: 1px solid @smoky;
@@ -122,11 +78,13 @@
 
 .main-nav__item a {
   &:hover {
+    box-sizing: border-box;
     color: @pink;
     border-top: 2px solid black;
   }
 
   &:active {
+    box-sizing: border-box;
     color: @darkpink;
     border-top: 2px solid black;
   }
@@ -149,11 +107,6 @@
   }
   .main-nav__item a {
     padding: 28px 0px 26px 0;
-  }
-  .main-nav__btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
   }
   .main-nav--closed .main-nav__item {
     display: none;
