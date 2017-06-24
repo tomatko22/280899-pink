@@ -85,7 +85,7 @@
         </fieldset>
         <fieldset class="form-block form-block--contacts">
           <div class="form-block__wrapper">
-            <h2 class="form-block__title">Контактная информация</h2>
+            <h2 class="form-block__title form-block__title--mobile">Контактная информация</h2>
             <div class="form-field">
               <label class="form-field__label" for="phone-number">Номер телефона</label>
               <input class="form-field__input" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
@@ -115,13 +115,14 @@
         </fieldset>
         <fieldset class="form-block form-block--comment">
           <div class="form-block__wrapper">
-            <h2 class="form-block__title">Опишите свои эмоции</h2>
+            <h2 class="form-block__title form-block__title--comment">Опишите свои эмоции</h2>
             <textarea class="form-block__textarea-comment" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
         </fieldset>
         <input class="btn-send" type="submit" value="Отправить форму">
-        <div class="form__info-legend">
-          <span class="form__info-legend-star">&#128945;</span> &#8211; обязательные поля
+        <div class="form__info">
+          <span class="form__info-star">*</span>
+          <span class="form__info-text">- обязательные поля</span>
         </div>
       </form>
     </main>

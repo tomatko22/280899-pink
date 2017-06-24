@@ -8,11 +8,18 @@
   &--grey {
     display: flex;
     flex-direction: row;
+
+
   }
 }
+.form-field:last-child {
+  margin-bottom: 0;
+}
 
+.form-field--grey:last-child {
+    margin-bottom: 40px;
+  }
 .form-field__label {
-  margin-bottom: 4px;
   padding-left: 60px;
 
   font-weight: 400;
@@ -26,10 +33,11 @@
     color: @blue;
   }
 }
-.form-block--contacts .form-field__label {
-  padding-left: 0px;
-}
 
+.form-block--contacts .form-field__label,
+.form-block--name .form-field__label {
+  padding-left: 20px;
+}
 
 .form-field--grey .form-field__input {
   display: none;
