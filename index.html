@@ -101,46 +101,41 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper">
           <table class="table-price">
-            <thead class="table-price__head">
               <tr class="table-price__row">
                 <th class="table-price__name table-price__name--hidden"><span class="table-price__sum"></span></th>
                 <th class="table-price__name">База<br><span class="table-price__sum">1,99 USD</span></th>
                 <th class="table-price__name table-price__name--hit">Стандарт<br><span class="table-price__sum">3,99 USD</span></th>
                 <th class="table-price__name">Анлим<br><span class="table-price__sum">9,99 USD</span></th>
               </tr>
-            </thead>
-            <tbody class="table-price__body">
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--hidden">Розовый фильтр</td>
+              <td class="table-price__cell">Розовый фильтр</td>
               <td class="table-price__cell table-price__cell--check">Розовый фильтр</td>
               <td class="table-price__cell table-price__cell--check">Розовый фильтр</td>
               <td class="table-price__cell table-price__cell--check">Розовый фильтр</td>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--hidden">Смайлики</td>
+              <td class="table-price__cell">Смайлики</td>
               <td class="table-price__cell table-price__cell--uncheck">Смайлики</td>
               <td class="table-price__cell table-price__cell--check">Смайлики</td>
               <td class="table-price__cell table-price__cell--check">Смайлики</td>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--hidden">Комментарии</td>
+              <td class="table-price__cell">Комментарии</td>
+              <td class="table-price__cell table-price__cell--uncheck">Комментарии</td>
               <td class="table-price__cell table-price__cell--uncheck">Комментарии</td>
               <td class="table-price__cell table-price__cell--check">Комментарии</td>
-              <td class="table-price__cell table-price__cell--check">Комментарии</td>
             </tr>
-            </tbody>
           </table>
+
           <div class="price__toggles">
             <label class="price__toggle" for="price-input-1"></label>
-            <label class="price__toggle" for="price-input-2"></label>
+            <label class="price__toggle price__toggle--active" for="price-input-2"></label>
             <label class="price__toggle" for="price-input-3"></label>
           </div>
           <input class="price__input" type="radio" name="table" id="price-input-1">
           <input class="price__input" type="radio" name="table" id="price-input-2" checked>
           <input class="price__input" type="radio" name="table" id="price-input-3">
-        </div>
       </section>
       <section class="contacts">
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
