@@ -45,6 +45,8 @@
 .intro-block__text {
   margin: 0;
   text-align: center;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 .intro-block__title {
@@ -65,6 +67,7 @@
 // временно
     background-image: none;
   }
+
   .intro-block__wrapper {
     display: flex;
     flex-direction: column;
@@ -73,10 +76,17 @@
     width: 300px;
     margin-bottom: 0px;
     padding: 0px 20px;
+    outline: 1px solid red;
   }
 
   .intro-block__icons {
     margin-bottom: 40px;
+  }
+
+  .intro-block__text {
+    font-size: 18;
+    font-weight: 300;
+    line-height: 24px;
   }
 
   .intro-block__title {
@@ -89,5 +99,36 @@
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
+  }
+}
+@media @desktop {
+  .intro-block {
+    display: flex;
+    width: 1200px;
+    height: 746px;
+    margin-bottom: 80px;
+    padding-left: 130px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .intro-block__wrapper {
+    padding: 0;
+  }
+  .intro-block__title {
+    display: block;
+    width: 234px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+  .intro-block__text {
+    font-size: 18;
+    font-weight: 300;
+    line-height: 24px;
   }
 }

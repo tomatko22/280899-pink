@@ -75,7 +75,7 @@
 @media @desktop {
   .contacts {
     padding: 74px 130px;
-    padding-top: 65px;
+    padding-top: 0;
   }
   .contacts__wrapper {
     display: flex;
@@ -84,9 +84,18 @@
 
   .contacts-item {
     width: 200px;
+    margin: 0;
 
     &--2 {
       order: 1;
     }
+  }
+
+  .contacts__title {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0 240px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }

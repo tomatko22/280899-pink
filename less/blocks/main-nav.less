@@ -3,6 +3,7 @@
   margin: 0 auto;
   background-color: @blue;
   color: @white;
+  box-sizing: border-box;
 }
 .main-nav__logo {
   display: block;
@@ -78,12 +79,14 @@
 
 .main-nav__item a {
   &:hover {
+    padding: 26px 0px;
     box-sizing: border-box;
     color: @pink;
     border-top: 2px solid black;
   }
 
   &:active {
+    padding: 26px 0px;
     box-sizing: border-box;
     color: @darkpink;
     border-top: 2px solid black;
@@ -118,6 +121,7 @@
 @media @desktop {
   .main-nav {
     position: static;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -142,6 +146,7 @@
     list-style: none;
   }
   .main-nav__item a {
+    padding: 45px 0px;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -153,7 +158,28 @@
     background-color: transparent;
     border: none;
   }
+
+  .main-nav__item a {
+    &:hover {
+      padding: 45px 0px;
+      box-sizing: border-box;
+      color: @pink;
+      border-top: 2px solid black;
+    }
+
+    &:active {
+      padding: 45px 0px;
+      box-sizing: border-box;
+      color: @darkpink;
+      border-top: 2px solid black;
+    }
+  }
+
   .main-nav--closed .main-nav__item {
     display: block;
+  }
+  .main-nav__wrapper {
+    background-color: rgba(27, 37, 47, 0.7);
+    background-color: transparent;
   }
 }

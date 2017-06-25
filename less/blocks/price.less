@@ -145,8 +145,9 @@
 
 @media @desktop {
   .price {
+    height: 282px;
     padding: 130px;
-    padding-top: 145px;
+    padding-top: 150px;
     padding-bottom: 95px;
     margin-bottom: 75px;
   }
@@ -160,8 +161,14 @@
     border: 2px solid @grey;
   }
 
+  .table-price__cell {
+    padding: 14px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
   .table-price__name {
-    padding: 17px 66px;
+    padding: 10px 40px;
     background-color: @blue;
     font-size: 18px;
     font-weight: 700;
@@ -174,6 +181,10 @@
     background-color: @lightgrey;
     border-top: 2px solid @lightgrey;
     border-left: 2px solid @lightgrey;
+  }
+
+  .table-price__sum {
+    font-size: 24px;
   }
 
   .price__toggles {
