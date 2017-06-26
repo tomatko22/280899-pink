@@ -100,18 +100,18 @@
   .redactor {
     display: flex;
     flex-direction: row;
-    padding: 0 20px;
-    background-color: @white;
+    padding: 55px 20px;
+    background-color: @lightgrey;
   }
-.redactor-photofull__link {
-  display: block;
-  margin-bottom: 0;
-  padding: 0;
-  width: 280px;
-  height: 375px;
-}
+  .redactor-photofull__link {
+    display: block;
+    margin-bottom: 0;
+    padding: 0;
+    width: 280px;
+    height: 375px;
+  }
 
-.redactor-form__scale {
+  .redactor-form__scale {
     display: none;
     margin-bottom: 0;
   }
@@ -147,13 +147,12 @@
     width: 25px;
     height: 25px;
     margin-right: 29px;
-    outline: 1px solid red;
   }
   .redactor-form__item {
     width: 275px;
     height: 200px;
     margin-left: 55px;
-    margin-bottom: 51px;
+    margin-bottom: 45px;
     padding: 0;
   }
   .redactor-form__item-container {
@@ -166,10 +165,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 23px 0;
-    padding-bottom: 23px;
+
     width: 275px;
     height: auto;
+    padding: 23px 0;
+    padding-bottom: 23px;
+    box-sizing: border-box;
     border-bottom: 1px solid #dddfe0;
 
   &:first-child {
@@ -206,18 +207,44 @@
 @media @desktop {
   .redactor {
     display: flex;
-    flex-direction: column;
-    padding: 0 130px;
-    background-color: @white;
+    width: 940px;
+    height: 515px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 130px;
+    background-color: @lightgrey;
+  }
+
+  .redactor-form__figure {
+    display: block;
+    height: 400px;
+  }
+
+  .redactor-form__photo-upload {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+
+  .redactor-photofull__link {
+    display: block;
+    width: 300px;
+    height: 400px;
   }
 
   .redactor-form {
-    padding: 58px 80px;
+    width: 420px;
+    height: 400px;
+    margin-left: 90px;
+    padding: 0;
   }
 
   .redactor-form__item {
-    width: 410px;
-    margin-left: 85px;
+    width: 420px;
+    margin-left: 0px;
+    margin-bottom: 145px;
   }
 
   .redactor-form__item-wrapper {
@@ -234,7 +261,6 @@
     display: block;
     width: 410px;
     padding: 0;
-    outline: 1px solid red;
   }
 
   .redactor-form__item-label {
@@ -271,32 +297,27 @@
   }
 
   .redactor-form__btn {
-    position: absolute;
-    bottom: 80px;
-    right: 60px;
-    padding: 0;
-    border-top: none;
-
     display: block;
     width: 412px;
+    margin-left: 0;
     padding: 0;
     border-top: none;
   }
 
   .redactor-form__btn .btn {
-    width: 183px;
-    height: 55px;
-    margin-right: 41px;
+    padding: 16px 40px;
     margin-bottom: 0;
+    margin-right: 43px;
     border: 3px solid @pink;
-    border-radius:  50px;
+    border-radius: 50px;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
     color: @pink;
+  }
 
-    &:last-child {
-      margin-right: 0px;
-    }
+  .redactor-form__btn .btn:last-child {
+    padding: 16px 50px;
+    margin-right: 0px;
   }
 }

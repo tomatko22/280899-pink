@@ -4,6 +4,10 @@
   background-color: @blue;
   color: @white;
   box-sizing: border-box;
+
+  &--desktop {
+    display: none;
+  }
 }
 .main-nav__logo {
   display: block;
@@ -105,6 +109,9 @@
   .main-nav {
     width: 660px;
   }
+  .main-nav__wrapper {
+    // background-color: transparent;
+  }
   .main-nav__list {
     width: 660px;
   }
@@ -120,16 +127,42 @@
 
 @media @desktop {
   .main-nav {
-    position: static;
-    box-sizing: border-box;
+    display: none;
+
+    &--desktop {
+      width: 1200px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .main-nav__wrapper {
+    display: block;
+    width: 150px;
+    padding: 0px;
+  }
+
+  .main-nav__container {
+    width: 940px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    width: 940px;
-    padding: 0 10px;
     margin: 0 auto;
     background-color: transparent;
+    outline: 1px solid red;
+  }
+
+  .main-nav__logo {
+    display: block;
+    width: 150px;
+    height: 40px;
+  }
+
+  .main-nav__logo-img {
+    display: block;
+    width: 150px;
+    height: 40px;
   }
 
   .main-nav__btn {
@@ -145,6 +178,7 @@
     padding: 0;
     list-style: none;
   }
+
   .main-nav__item a {
     padding: 45px 0px;
     font-weight: 400;
@@ -176,6 +210,7 @@
   .main-nav--closed .main-nav__item {
     display: block;
   }
+
   .main-nav__wrapper {
     background-color: rgba(27, 37, 47, 0.7);
     background-color: transparent;
