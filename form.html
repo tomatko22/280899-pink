@@ -31,6 +31,30 @@
       </nav>
     </header>
     <div class="block">
+      <nav class="main-nav main-nav--closed main-nav--desktop">
+        <div class="main-nav__container">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
+            </a>
+            <button class="main-nav__btn" type="button">Открыть</button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main‐nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main‐nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main‐nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main‐nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <h1 class="block__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <main>
@@ -57,47 +81,60 @@
         <fieldset class="form-block form-block--grey form-block--achievs">
           <div class="form-block__wrapper">
             <h2 class="form-block__title">Ваши безбашенные достижения в путешествии</h2>
-            <div class="form-field form-field--grey">
-              <input class="form-field__input" type="checkbox" name="selfie" id="selfie" checked>
-              <label class="form-field__label form-field__label--grey" for="selfie">Сделал селфи с акулой</label>
+            <div class="form-block__achiev">
+              <div class="form-field form-field--grey">
+                <input class="form-field__input" type="checkbox" name="selfie" id="selfie" checked>
+                <label class="form-field__label form-field__label--grey" for="selfie">Сделал селфи с акулой</label>
+              </div>
+              <div class="form-field form-field--grey">
+                <input class="form-field__input" type="checkbox" name="beach" id="beach" checked>
+                <label class="form-field__label form-field__label--grey" for="beach">Обгорел на пляже</label>
+              </div>
             </div>
-            <div class="form-field form-field--grey">
-              <input class="form-field__input" type="checkbox" name="beach" id="beach" checked>
-              <label class="form-field__label form-field__label--grey" for="beach">Обгорел на пляже</label>
+            <div class="form-block__achiev">
+              <div class="form-field form-field--grey">
+                <input class="form-field__input" type="checkbox" name="norris" id="norris" >
+                <label class="form-field__label form-field__label--grey" for="norris">Видел Чака Норриса</label>
+              </div>
+              <div class="form-field form-field--grey">
+                <input class="form-field__input" type="checkbox" name="gift" id="gift">
+                <label class="form-field__label form-field__label--grey" for="gift">Накупил сувениров</label>
+              </div>
             </div>
-            <div class="form-field form-field--grey">
-              <input class="form-field__input" type="checkbox" name="norris" id="norris" >
-              <label class="form-field__label form-field__label--grey" for="norris">Видел Чака Норриса</label>
-            </div>
-            <div class="form-field form-field--grey">
-              <input class="form-field__input" type="checkbox" name="gift" id="gift">
-              <label class="form-field__label form-field__label--grey" for="gift">Накупил сувениров</label>
-            </div>
-            <div class="form-field form-field--grey">
-              <input class="form-field__input" type="checkbox" name="tower" id="tower" checked>
-              <label class="form-field__label form-field__label--grey" for="tower">Удержал башню</label>
-            </div>
-            <div class="form-field form-field--grey">
-              <input class="form-field__input" type="checkbox" name="hotel" id="hotel">
-              <label class="form-field__label form-field__label--grey" for="hotel">Разгромил отель</label>
+            <div class="form-block__achiev">
+              <div class="form-field form-field--grey">
+                <input class="form-field__input" type="checkbox" name="tower" id="tower" checked>
+                <label class="form-field__label form-field__label--grey" for="tower">Удержал башню</label>
+              </div>
+              <div class="form-field form-field--grey">
+                <input class="form-field__input" type="checkbox" name="hotel" id="hotel">
+                <label class="form-field__label form-field__label--grey" for="hotel">Разгромил отель</label>
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="form-block form-block--contacts">
           <div class="form-block__wrapper">
             <h2 class="form-block__title form-block__title--mobile">Контактная информация</h2>
-            <div class="form-field">
+            <div class="form-field form-field--contacts">
+
               <label class="form-field__label" for="phone-number">Номер телефона</label>
-              <input class="form-field__input" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+              <div class="form-field__wrapper">
+                <span class="form-field__input-icon"></span>
+                <input class="form-field__input" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+              </div>
             </div>
-            <div class="form-field">
+            <div class="form-field form-field--contacts">
               <label class="form-field__label" for="email">Адрес почты</label>
-              <input class="form-field__input" type="text" name="email" id="email" placeholder="Введите почту &#128945;">
+              <div class="form-field__wrapper">
+                <span class="form-field__input-icon"></span>
+                <input class="form-field__input" type="text" name="email" id="email" placeholder="Введите почту &#128945;">
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="form-block form-block--grey form-block--apps">
-          <div class="form-block__wrapper ">
+          <div class="form-block__wrapper">
             <h2 class="form-block__title">С каким приложением путешествовали?</h2>
             <div class="form-field form-field--grey">
               <input class="form-field__input" type="radio" name="app" value="ios" id="ios">
@@ -114,15 +151,14 @@
           </div>
         </fieldset>
         <fieldset class="form-block form-block--comment">
-          <div class="form-block__wrapper">
+<!--           <div class="form-block__wrapper"> -->
             <h2 class="form-block__title form-block__title--comment">Опишите свои эмоции</h2>
             <textarea class="form-block__textarea-comment" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </div>
+          <!-- </div> -->
         </fieldset>
-        <input class="btn-send" type="submit" value="Отправить форму">
-        <div class="form__info">
-          <span class="form__info-star">*</span>
-          <span class="form__info-text">- обязательные поля</span>
+        <div class="form__container">
+          <input class="btn-send" type="submit" value="Отправить форму">
+          <div class="form__endnote">* - обязательные поля</div>
         </div>
       </form>
     </main>
