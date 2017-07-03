@@ -1,6 +1,6 @@
 .photo-review {
-  background-color: @lightgrey;
   padding: 25px 17px;
+  background-color: @grey;
 }
 
 .photo-review__author {
@@ -17,11 +17,52 @@
   text-transform: uppercase;
 }
 
+.photo-review {
+
+}
+
 .photo-review__text {
   margin: 0;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+}
+.photo-review__likes {
+    color: @pink;
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+@media @tablet {
+  .photo-review {
+    height: 155px;
+    padding: 25px 27px;
+    box-sizing: border-box;
+  }
+  .photo-review__likes {
+    color: @pink;
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media @desktop {
+  .photo-review__likes {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: @pink;
+
+    &--hidden {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
+  }
 }

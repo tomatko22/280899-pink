@@ -1,5 +1,21 @@
 .photos {
-  margin: 20px auto;
-  padding: 0 20px;
-  outline: 1px solid grey;
+  margin: 0px auto;
+}
+
+@media @tablet {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0 20px;
+  }
+}
+
+@media @desktop {
+  .photos {
+    width: 940px;
+    padding: 0 10px;
+    margin-bottom: 60px;
+  }
 }

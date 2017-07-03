@@ -1,0 +1,146 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 0;
+
+
+  &--grey {
+    display: flex;
+    flex-direction: row;
+
+
+  }
+}
+.form-field__input-icon {
+  display: none;
+}
+
+.form-field:last-child {
+  margin-bottom: 0;
+}
+
+.form-field--grey:last-child {
+  margin-bottom: 40px;
+}
+
+.form-field__label {
+  padding-left: 60px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @pink;
+
+  &--grey {
+    text-transform: none;
+    color: @blue;
+  }
+}
+
+.form-block--contacts .form-field__label,
+.form-block--name .form-field__label {
+  padding-left: 20px;
+}
+
+.form-field--grey .form-field__input {
+  display: none;
+}
+
+
+@media @tablet {
+  .form-field__input-icon {
+    display: none;
+  }
+
+  .form-field__input {
+    padding: 17px 20px;
+    border: 2px solid @grey;
+  }
+
+  .form-field--name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-field--name .form-field__input {
+    flex-grow: 1;
+  }
+  .form-field--name .form-field__label {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .form-field--grey {
+    margin-bottom: 40px;
+  }
+
+  .form-field--grey:first-of-type {
+    margin-top: 50px;
+  }
+
+  .form-field--grey:last-child {
+    margin-bottom: 50px;
+  }
+
+  .form-field--grey .form-field__label{
+    padding: 8px 60px;
+    padding-right: 0;
+  }
+
+  .form-field--contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 45px;
+    margin-bottom: 37px;
+  }
+
+  .form-field--contacts:last-child {
+    margin-top: 0;
+    margin-bottom: 37px;
+  }
+
+  .form-field--contacts .form-field__label{
+    margin-top: 10px;
+  }
+}
+
+@media @desktop {
+  .form-field__input-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: @grey;
+    border: 2px solid @grey;
+    box-sizing: border-box;
+  }
+  .form-field--contacts {
+    display: flex;
+    width: 375px;
+    flex-direction: column-reverse;
+  }
+
+  .form-field--contacts:last-child {
+    margin-top: 45px;
+  }
+
+  .form-field--contacts .form-field__input {
+    width: 315px;
+    height: 60px;
+    flex-grow: 0;
+    padding: 0 20px;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .form-field--contacts .form-field__label{
+    padding-left: 15px;
+    margin: 0;
+  }
+  .form-field__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

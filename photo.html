@@ -7,38 +7,78 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
-        </a>
-        <button class="btn" type="button">Открыть</button>
-      </div>
-      <nav class="main-nav main-nav--open">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
+          </a>
+          <button class="main-nav__btn" type="button">Открыть</button>
+        </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main‐nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main‐nav__link" href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main‐nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main‐nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          <li class="main-nav__item">
+            <a class="main‐nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main‐nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main‐nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main‐nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
         </ul>
       </nav>
-      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
+    <div class="block">
+      <nav class="main-nav main-nav--closed main-nav--desktop">
+        <div class="main-nav__container">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
+            </a>
+            <button class="main-nav__btn" type="button">Открыть</button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main‐nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main‐nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main‐nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main‐nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="block__title">Фотографии пользователей</h1>
+    </div>
     <main>
       <div class="main-slogan">
-        <p class="main-slogan__text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+        <p class="main-slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <div class="panorama">
-        <a class="photo-fullscreen__link" href="#">
-          <figure class="photo-fullscreen__figure-panorama">
-            <img class="photo-fullscreen__img" src="/img/panorama-mobile@1x.jpg" alt="photo">
-          </figure>
+        <a class="photo-fullscreen__link-panorama" href="#">
+
+            <img class="photo-fullscreen__img" src="img/panorama-mobile@1x.jpg" width="320" height="137"  alt="photo">
+
         </a>
-        <div class="photo-review">
-          <span class="photo-review__author">Анна</span>
-          <span class="photo-review__time">(5 минут назад)</span>
-          <p class="photo-review__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <div class="photo-review__likes">Нравится:
-            <span class="photo-review__likes-num">215</span>
+        <div class="panorama__wrapper">
+          <div class="photo-review photo-review--panorama">
+            <span class="photo-review__author">Анна</span>
+            <span class="photo-review__time">(5 минут назад)</span>
+            <div class="photo-review__likes photo-review__likes--desktop">Нравится:
+              <span class="photo-review__likes-num">215</span>
+            </div>
+            <p class="photo-review__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <!-- вкрыть на десктопе -->
+            <div class="photo-review__likes photo-review__likes--hidden">Нравится:
+              <span class="photo-review__likes-num">215</span>
+            </div>
           </div>
         </div>
       </div>
@@ -46,7 +86,7 @@
         <article class="photo">
           <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="/img/photo-1-mobile@1x.jpg" alt="photo">
+              <img class="photo__img" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -61,7 +101,7 @@
         <article class="photo">
           <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="/img/photo-2-mobile@1x.jpg" alt="photo">
+              <img class="photo__img" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -76,7 +116,7 @@
         <article class="photo">
           <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="/img/photo-3-mobile@1x.jpg" alt="photo">
+              <img class="photo__img" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -91,7 +131,7 @@
         <article class="photo">
           <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="/img/photo-4-mobile@1x.jpg" alt="photo">
+              <img class="photo__img" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -106,7 +146,7 @@
         <article class="photo">
           <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="/img/photo-5-mobile@1x.jpg" alt="photo">
+              <img class="photo__img" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -121,7 +161,7 @@
         <article class="photo">
           <a class="photo-fullscreen__link" href="#">
             <figure class="photo-fullscreen__figure">
-              <img class="photo__img" src="/img/photo-6-mobile@1x.jpg" alt="photo">
+              <img class="photo__img" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo">
             </figure>
           </a>
           <div class="photo-review">
@@ -134,24 +174,46 @@
           </div>
         </article>
       </section>
-      <div class="main-slogan">
-        <p class="main-slogan__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="main-slogan main-slogan--bottom">
+        <p class="main-slogan__text">Затмите их всех!</p>
+        <p class="main-slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="redactor">
+         <a class="redactor-photofull__link" href="#">
+            <figure class="redactor-form__figure">
+              <img class="redactor-form__photo-upload" src="img/photo-7-mobile@1x.jpg" alt="photo">
+            </figure>
+          </a>
         <form class="redactor-form" action="https://echo.htmlacademy.ru/" method="post">
-          <figure class="redactor-form__figure">
-            <img class="redactor-form__photo-upload" src="/img/photo-7-mobile@1x.jpg" alt="photo">
-          </figure>
           <div class="redactor-form__item">
-            <label class="redactor-form__item-label" for="crop"></label>
-            <input class="redactor-form__item-input redactor__item-input--active" type="radio" name="redactor" value="crop" id="crop">
-            <label class="redactor-form__item-label" for="contrast"></label>
-            <input class="redactor-form__item-input" type="radio" name="redactor" value="contrast" id="contrast">
-            <label class="redactor-form__item-label" for="fill"></label>
-            <input class="redactor-form__item-input" type="radio" name="redactor" value="fill" id="fill">
-          </div>
-          <div class="redactor-form__scale">
-            <div class="redactor-form__scale-control"></div>
+            <div class="redactor-form__item-container">
+              <div class="redactor-form__item-wrapper">
+                <label class="redactor-form__item-label" for="crop"></label>
+                <input class="redactor-form__item-input redactor__item-input--active" type="radio" name="redactor" value="crop" id="crop">
+                <div class="redactor-form__scale redactor-form__scale--mobile-hidden">
+                  <div class="redactor-form__scale-control redactor-form__scale-control--1"></div>
+                </div>
+              </div>
+
+              <div class="redactor-form__item-wrapper">
+                <label class="redactor-form__item-label" for="contrast"></label>
+                <input class="redactor-form__item-input" type="radio" name="redactor" value="contrast" id="contrast">
+                <div class="redactor-form__scale redactor-form__scale--mobile-hidden">
+                  <div class="redactor-form__scale-control redactor-form__scale-control--2"></div>
+                </div>
+              </div>
+
+              <div class="redactor-form__item-wrapper">
+                <label class="redactor-form__item-label" for="fill"></label>
+                <input class="redactor-form__item-input" type="radio" name="redactor" value="fill" id="fill">
+                <div class="redactor-form__scale redactor-form__scale--mobile-hidden">
+                  <div class="redactor-form__scale-control redactor-form__scale-control--3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="redactor-form__scale">
+              <div class="redactor-form__scale-control"></div>
+            </div>
           </div>
           <div class="redactor-form__btn">
             <input class="btn" type="submit" name="btn-send" id="btn-send" value="Запостить">
@@ -161,15 +223,21 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#"><img src="/img/logo-pink-blue-mobile.svg" alt="logo"></a>
+      <a class="page-footer__logo" href="#">
+        <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+      </a>
       <span class="social-links">
-        <a class="social-link social-links--tweet" href="#">tweet</a>
-        <a class="social-link social-links--fb" href="#">facebook</a>
-        <a class="social-link social-links--youtube" href="#">youtube</a>
+        <a class="social-link social-links--tweet" href="#">tw</a>
+        <a class="social-link social-links--fb" href="#">fb</a>
+        <a class="social-link social-links--youtube" href="#">yt</a>
       </span>
-      <span class="page-footer__copyright">Разработано
-        <a class="page-footer__copyright-icon"><img src="/img/logo-htmlacademy.svg" alt="htmlacademy"></a>
+      <span class="page-footer__copyright">
+            Разработано
+        <a class="page-footer__copyright-icon">
+          <img src="img/logo-htmlacademy.svg" alt="htmlacademy">
+        </a>
       </span>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

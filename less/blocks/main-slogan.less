@@ -1,10 +1,51 @@
 .main-slogan {
   text-align: center;
-  padding: 0 20px;
-  margin: 50px 0;
+  padding: 45px 20px;
+  padding-bottom: 0;
+  margin-bottom: 45px;
+
+  &--bottom {
+      padding: 35px 20px;
+    }
 }
+
 .main-slogan__text {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+}
+
+@media @tablet {
+  .main-slogan {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0 60px;
+
+    &--bottom {
+      width: 430px;
+      padding: 0 115px;
+    }
+  }
+  .main-slogan__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media @desktop {
+  .main-slogan {
+    width: 571px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 0 315px;
+
+    &--bottom {
+      width: 423px;
+      padding: 0 390px;
+      margin-bottom: 65px;
+    }
+  }
 }

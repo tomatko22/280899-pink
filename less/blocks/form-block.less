@@ -1,0 +1,181 @@
+.form-block {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+
+  &--grey {
+    background-color: @lightgrey;
+  }
+}
+
+.form-block__title {
+  margin: 38px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @pink;
+  text-align: center;
+
+  &--mobile {
+    display: none;
+  }
+
+  &--comment {
+    margin: 0;
+    margin-bottom: 17px;
+  }
+}
+
+.form-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.form-block__textarea-comment {
+  width: 280px;
+  margin-left: 20px;
+  padding: 20px 20px;
+  padding-right: 0;
+  box-sizing: border-box;;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media @tablet {
+  .form-block {
+    position: relative;
+    margin: 0 20px;
+    margin-bottom: 65px;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px @grey;
+    border-radius: 1px;
+  }
+
+  .form-block--grey {
+    background-color: @white;
+    padding: 0;
+  }
+
+  .form-block--name {
+    position: static;
+    order: -4;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .form-block--contacts {
+    order: -2;
+    padding: 0;
+    margin-bottom: 69px;
+  }
+
+  .form-block--apps {
+    order: -3;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 69px;
+  }
+
+  .form-block--achievs {
+    order: -1;
+  }
+
+  .form-block--comment {
+    order: 0;
+    padding-top: 0;
+    margin-bottom: 73px;
+  }
+
+
+  .form-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 60px;
+
+    &--name {
+      border: 0;
+      padding: 0;
+    }
+  }
+
+  .form-block__title {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0;
+    padding: 0 23px;
+    white-space: nowrap;
+    background-color: @white;
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .form-block--comment .form-block__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .form-block__textarea-comment {
+    box-sizing: border-box;
+    width: 500px;
+    margin: 45px 60px;
+    margin-bottom: 50px;
+    padding: 25px 15px;
+  }
+}
+@media @desktop {
+  .form-block--name {
+    width: 436px;
+    margin-left: 130px;
+  }
+
+  .form-block--apps {
+    width: 436px;
+  }
+
+  .form-block--contacts {
+    margin: 60px 130px;
+    margin-top: 0;
+  }
+
+  .form-block--contacts .form-block__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+  }
+
+  .form-block--achievs .form-block__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-block__achiev {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-block--comment {
+    order: 0;
+    margin: 65px 130px;
+    margin-top: 0;
+  }
+
+  .form-block__textarea-comment {
+    box-sizing: border-box;
+    width: 820px;
+    margin: 45px 60px;
+    margin-bottom: 50px;
+    padding: 25px 15px;
+  }
+}
